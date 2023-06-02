@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Quicksand;
+}
+
+body {
+    overflow: hidden;
+}
+div#container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(to right, #8A2387 , #E94057,#F27121);
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+h1#title {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    background: linear-gradient(45deg, #F27121,#E94057 ,#8A2387 );
+    padding: 10px 0px;
+}
+
+div#content {
+    position: relative;
+    left: 57%;
+    top: 5%;
+    width: auto;
+    transform: translateX(-50%);
+}
+
+input#text {
+    border: none;
+    width: 80%;
+    height: 50px;
+    font-size: 30px;
+    caret-color: #bc13ff;
+    background: white;
+    transition: 300ms;
+    color: rgb(89, 0, 92);
+    text-align: center;
+}
+
+input#text:hover {
+    background: #f0f0f0;
+}
+
+span#add {
+    background-color: #bc13ff;
+    color: white;
+    position: relative;
+    padding: 12px 20px;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 10px;
+    margin: -4px;
+
+    cursor: pointer;
+}
+
+span#add:hover {
+    background-color: #8A2387;
+    color: white;
+}
+
+div.bricks{
+  position:absolute;
+width: 30%;
+height: 55%;
+background: linear-gradient(114.84deg, rgba(255, 255, 255, 0.308) 18.44%, rgba(255, 255, 255, 0) 80.51%);
+}
+div.bricktwo{
+  left: 70%;
+  transform: rotate(45deg)
+}
+div.brickone{
+  top: 31%;
+  left: 2%;
+  transform: rotate(45deg)
+}
+
+input[type=checkbox]{
+  width: 50px;
+  cursor: pointer;
+  height: 100%;
+}
+
+
+ul {
+    list-style-type: none;
+    color: white;
+    font-size: 25px;
+    position: relative;
+    top: 10%;
+    line-height: 55px;
+    height: 440px;
+}
+
+ul li {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+
+ul li:nth-child(odd) {
+    background: rgba(242, 113, 33, 0.575);
+    color: #ffffff;
+}
+
+ul li:nth-child(even) {
+    background: rgba(138, 35, 135, 0.521);
+    color: rgb(255, 255, 255);
+}
+
+ul li span {
+    position: absolute;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 0px 20px;
+    cursor: pointer;
+}
+ul li input[type=checkbox]{
+  position: absolute;
+  right: 0;
+}
+ul li.checked{
+  background: rgba(255, 255, 255, 0.644);
+  color: rgb(73, 73, 73);
+  text-decoration: line-through;
+}
+ul li.checked span{
+  background-color: rgba(73, 73, 73, 0.645);
+  color: #fff;
+}
+
+
+
+@media only screen and (max-width:500px){
+  input#text{
+    position: relative;
+    left: -5%;
+  }
+  span#add{
+    position: relative;
+    right: 5%;
+  }
+}
+@media only screen and (max-width:375px){
+  input#text{
+    position: relative;
+    left: 3%;
+  }
+  span#add{
+    position: absolute;
+    top: 130%;
+    width: 50%;
+    text-align: center;
+    left: 10%;
+  }
+  ul{
+    position: relative;
+    top: 20%;
+  }
+}
+@media only screen and (max-height:415px){
+  ul{
+    top: 28%;
+  }
+}
