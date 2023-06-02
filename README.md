@@ -1,2 +1,2 @@
 # todolist-replit
-ToDoList
+Pretty ToDoList rely on Window.localStorage
